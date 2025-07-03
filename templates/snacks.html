@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Snacks - Homemade Happiness</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      background-color: #ebf9e4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #66814b;
+      padding: 10px;
+    }
+    nav a {
+      color: #ebf9e4;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      color: #66814b;
+      margin-top: 20px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .product {
+      background: #c4dbb6;
+      border: 2px solid #a1bd8d;
+      border-radius: 10px;
+      width: 250px;
+      margin: 15px;
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+    }
+    .product h2 {
+      color: #35451c;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .product form button {
+      background: #66814b;
+      color: #ebf9e4;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product form button:hover {
+      background: #35451c;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="{{ url_for('home') }}">🏠 Home</a>
+  <a href="{{ url_for('show_veg_pickles') }}">🥭 Veg Pickles</a>
+  <a href="{{ url_for('show_non_veg_pickles') }}">🍗 Non-Veg Pickles</a>
+  <a href="{{ url_for('show_snacks') }}">🍘 Snacks</a>
+  <a href="{{ url_for('view_cart') }}">🛒 Cart</a>
+  <a href="{{ url_for('signup') }}">📝 Sign Up</a>
+  <a href="{{ url_for('login') }}">🔑 Login</a>
+  <a href="{{ url_for('contact_us') }}">📞 Contact Us</a>
+  <a href="{{ url_for('about') }}">ℹ️ About Us</a>
+  <a href="{{ url_for('logout') }}">🚪 Logout</a>
+</nav>
+
+<h1>Snacks</h1>
+
+<div class="products">
+
+  
+  <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\cake-batter-dip.png" alt="Cake Batter">
+    <h2>Cake Batter</h2>
+    
+    <p><strong>Price:</strong> ₹80</p>
+    <p><strong>Weight:</strong> 250g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Mixture">
+      <input type="hidden" name="price" value="80">
+      <input type="hidden" name="weight" value="250g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+ 
+  <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\cheesy-crackers.png" alt="Cheese Crackers">
+    <h2>Cheese Crackers</h2>
+    
+    <p><strong>Price:</strong> ₹70</p>
+    <p><strong>Weight:</strong> 250g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Murukku">
+      <input type="hidden" name="price" value="70">
+      <input type="hidden" name="weight" value="250g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  
+  <div class="product">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6xEKHCXmea9LBYZIRJii6A16_E5Uk7s6xtj1oZ7iCP77yw8yA" alt="Fries">
+    <h2>Fries</h2>
+    
+    <p><strong>Price:</strong> ₹85</p>
+    <p><strong>Weight:</strong> 250g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Banana Chips">
+      <input type="hidden" name="price" value="85">
+      <input type="hidden" name="weight" value="250g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  
+  <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\grilled_cheese_cristini.png" alt="Grilled Cheese">
+    <h2>Grilled Cheese</h2>
+    
+    <p><strong>Price:</strong> ₹75</p>
+    <p><strong>Weight:</strong> 250g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Ribbon Pakoda">
+      <input type="hidden" name="price" value="75">
+      <input type="hidden" name="weight" value="250g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  
+  <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\Peach-Crumb-Bars.png" alt="Peach Crumb">
+    <h2>Peach Crumb</h2>
+    
+    <p><strong>Price:</strong> ₹65</p>
+    <p><strong>Weight:</strong> 250g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Kara Sev">
+      <input type="hidden" name="price" value="65">
+      <input type="hidden" name="weight" value="250g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+  
+  <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\potato_chips.png" alt="Potato Chips">
+    <h2>Potato Chips</h2>
+    
+    <p><strong>Price:</strong> ₹60</p>
+    <p><strong>Weight:</strong> 200g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Thattai">
+      <input type="hidden" name="price" value="60">
+      <input type="hidden" name="weight" value="200g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+ <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\savory_fire_crackers.png" alt="Savory Fire Crackers">
+    <h2>Savory Fire Crackers</h2>
+    
+    <p><strong>Price:</strong> ₹60</p>
+    <p><strong>Weight:</strong> 200g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Thattai">
+      <input type="hidden" name="price" value="60">
+      <input type="hidden" name="weight" value="200g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+
+   <div class="product">
+    <img src="C:\Users\sastr\OneDrive\Pictures\Saved Pictures\oatmeal-cookies.png" alt="Oatmeal Choco Cookies">
+    <h2>Oatmeal Choco Cookies</h2>
+    
+    <p><strong>Price:</strong> ₹60</p>
+    <p><strong>Weight:</strong> 200g</p>
+    <form action="{{ url_for('add_to_cart') }}" method="POST">
+      <input type="hidden" name="name" value="Thattai">
+      <input type="hidden" name="price" value="60">
+      <input type="hidden" name="weight" value="200g">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+
+
+
+
+</div>
+
+</body>
+</html>
