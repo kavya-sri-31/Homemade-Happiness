@@ -19,8 +19,8 @@ def inject_now():
 
 # ✅ DynamoDB
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
-user_table = dynamodb.Table('Users')
-orders_table = dynamodb.Table('Orders')
+user_table = dynamodb.Table('users')
+orders_table = dynamodb.Table('orders')
 
 # ✅ SNS
 sns = boto3.client('sns', region_name='us-east-1')
