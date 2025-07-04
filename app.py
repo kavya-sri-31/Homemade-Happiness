@@ -18,12 +18,12 @@ def inject_now():
     return {'now': datetime.now}
 
 # ✅ DynamoDB
-dynamodb = boto3.resource('dynamodb', region_name='ap-south-1')
+dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 user_table = dynamodb.Table('Users')
 orders_table = dynamodb.Table('Orders')
 
 # ✅ SNS
-sns = boto3.client('sns', region_name='ap-south-1')
+sns = boto3.client('sns', region_name='us-east-1')
 SNS_TOPIC_ARN = 'YOUR_SNS_TOPIC_ARN'  # ⚠️ Replace with your real SNS ARN
 
 # ✅ Email config
