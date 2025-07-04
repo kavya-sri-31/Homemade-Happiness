@@ -34,16 +34,16 @@ EMAIL_PASSWORD = 'ikpo xzcp gbjh atws'
 
 # Product data
 veg_pickles = [
-    {'id': 1, 'name': 'Mango Pickle', 'price': 250, 'weight': '500g', 'spice_level': 5, 'description': 'Traditional raw mango chunks spiced and sun-cured.', 'image': '/static/images/mango.jpg', 'rating': 5},
-    {'id': 2, 'name': 'Lemon Pickle', 'price': 220, 'weight': '500g', 'spice_level': 3, 'description': 'Zesty lemon pieces pickled with salt & spices.', 'image': '/static/images/lemon.jpg', 'rating': 4}
+    {'id': 1, 'name': 'Mango Pickle', 'price': 250, 'weight': '500g', 'spice_level': 5, 'description': 'Traditional raw mango chunks spiced and sun-cured.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\mango-pickle.png', 'rating': 5},
+    {'id': 2, 'name': 'Lemon Pickle', 'price': 220, 'weight': '500g', 'spice_level': 3, 'description': 'Zesty lemon pieces pickled with salt & spices.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\lemon_pickle.png', 'rating': 4}
 ]
 
 non_veg_pickles = [
-    {'id': 9, 'name': 'Prawn Pickle', 'price': 599, 'weight': '500g', 'spice_level': 3, 'description': 'Spicy, tangy prawns soaked in coastal masala.', 'image': '/static/images/prawn.jpg', 'rating': 5}
+    {'id': 9, 'name': 'Prawn Pickle', 'price': 599, 'weight': '500g', 'spice_level': 3, 'description': 'Spicy, tangy prawns soaked in coastal masala.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\prawn_pickle.png', 'rating': 5}
 ]
 
 snacks = [
-    {'id': 15, 'name': 'Mixture', 'price': 99, 'weight': '250g', 'description': 'A crunchy blend of sev, nuts, spices.', 'image': '/static/images/mixture.jpg', 'rating': 5}
+    {'id': 15, 'name': 'savory fire crackers', 'price': 99, 'weight': '250g', 'description': 'A crunchy blend of sev, nuts, spices.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\savory_fire_crackers.png', 'rating': 5}
 ]
 
 @app.route('/')
