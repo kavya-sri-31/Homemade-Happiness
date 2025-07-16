@@ -33,17 +33,36 @@ EMAIL_ADDRESS = 'kavyasrikoduru18@gmail.com'
 EMAIL_PASSWORD = 'ikpo xzcp gbjh atws'
 
 # Product data
-veg_pickles = [
-    {'id': 1, 'name': 'Mango Pickle', 'price': 250, 'weight': '500g', 'spice_level': 5, 'description': 'Traditional raw mango chunks spiced and sun-cured.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\mango-pickle.png', 'rating': 5},
-    {'id': 2, 'name': 'Lemon Pickle', 'price': 220, 'weight': '500g', 'spice_level': 3, 'description': 'Zesty lemon pieces pickled with salt & spices.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\lemon_pickle.png', 'rating': 4}
-]
+veg_pickles = [ 
+    {'id': 1, 'name': 'Mango Pickle', 'price': 120, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\mango-pickle.png', 'rating': 5},
+    {'id': 2, 'name': 'Lemon Pickle', 'price': 100, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\lemon_pickle.png', 'rating': 4},
+    {'id': 3, 'name': 'Tomato Pickle', 'price': 95, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\Tomatopickle.png', 'rating': 5},
+    {'id': 4, 'name': 'Amla Pickle', 'price': 85, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\Amla_Pickles.png', 'rating': 4},
+    {'id': 5, 'name': 'Tamarind Pickle', 'price': 110, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\tamarind_pickle.png', 'rating': 4},
+    {'id': 6, 'name': 'Garlic Pickle', 'price': 95, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\garlic_pickles.png', 'rating': 4},
+    {'id': 7, 'name': 'Gongura Pickle', 'price': 105, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\Gongura_pickles.png', 'rating': 5}
+
+]   
 
 non_veg_pickles = [
-    {'id': 9, 'name': 'Prawn Pickle', 'price': 599, 'weight': '500g', 'spice_level': 3, 'description': 'Spicy, tangy prawns soaked in coastal masala.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\prawn_pickle.png', 'rating': 5}
+    {'id': 8, 'name': 'Avakaya Chicken Pickle', 'price': 450, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\Chicken-Aavakaya.png', 'rating': 5},
+    {'id': 9, 'name': 'Boneless Chicken Pickle', 'price': 400, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\chicken-boneless-pickle.png', 'rating': 4},
+    {'id': 10, 'name': 'Boneless Mutton Pickle', 'price': 400, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\boneless_mutton.png', 'rating': 4},
+    {'id': 11, 'name': 'Fish Pickle', 'price': 550, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\fish_pickle.png', 'rating': 4},
+    {'id': 12, 'name': 'Gongura Mutton Pickle', 'price': 800, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\GonguraMuttonPickle.png', 'rating': 4},
+    {'id': 13, 'name': 'Gongura Prawn Pickle', 'price': 500, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\gongura_prawn.png', 'rating': 4},
+    {'id': 14, 'name': 'Spicy Chicken Pickle', 'price': 240, 'weight': '500g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\spicychicken_pickle.png', 'rating': 4}
 ]
 
 snacks = [
-    {'id': 15, 'name': 'savory fire crackers', 'price': 99, 'weight': '250g', 'description': 'A crunchy blend of sev, nuts, spices.', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\savory_fire_crackers.png', 'rating': 5}
+    {'id': 15, 'name': 'Cake Batter', 'price': 80, 'weight': '250g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\cake-batter-dip.png', 'rating': 5},
+    {'id': 16, 'name': 'Cheese Crackers', 'price': 100, 'weight': '250g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\cheesy-crackers.png', 'rating': 4},
+    {'id': 17, 'name': 'Fries', 'price': 85, 'weight': '250g', 'image': 'C:\Users\sastr\OneDrive\Desktop\Homemade Pickles final\project\static\images\fries.png', 'rating': 4},
+    {'id': 18, 'name': 'Grilled Cheese', 'price': 75, 'weight': '250g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\grilled_cheese_cristini.png', 'rating': 4},
+    {'id': 19, 'name': 'Peach Crumb', 'price': 65, 'weight': '250g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\Peach-Crumb-Bars.png', 'rating': 4},
+    {'id': 20, 'name': 'Potato Chips', 'price': 60, 'weight': '200g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\potato_chips.png', 'rating': 4},
+    {'id': 21, 'name': 'Savory Fire Crackers', 'price': 60, 'weight': '200g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\savory_fire_crackers.png', 'rating': 4},
+    {'id': 21, 'name': 'Oatmeal Choco Cookies', 'price': 60, 'weight': '200g', 'image': 'C:\Users\sastr\OneDrive\Pictures\Saved Pictures\oatmeal-cookies.png', 'rating': 4}
 ]
 
 @app.route('/')
@@ -187,7 +206,7 @@ def checkout():
             Message=f"Order ID: {order_id}\nName: {name}\nTotal: ₹{total}"
         )
 
-        send_email(email, 'Order Confirmation - Pickle Paradise',
+        send_email(email, 'Order Confirmation - Homemade Happiness',
                    f'Thank you {name} for your order!\nOrder ID: {order_id}\nTotal: ₹{total}\nPayment: {payment}')
 
         session.pop('cart', None)
@@ -202,7 +221,7 @@ def signup():
         password = request.form['password']
         user_id = str(uuid.uuid4())
         user_table.put_item(Item={'User_id': user_id, 'email': email, 'password': password})
-        send_email(email, 'Welcome to Pickle Paradise', 'Thank you for signing up!')
+        send_email(email, 'Welcome to Homemade Happiness', 'Thank you for signing up!')
         flash("Signup successful! Please log in.", "success")
         return redirect(url_for('login'))
     return render_template('signup.html')
